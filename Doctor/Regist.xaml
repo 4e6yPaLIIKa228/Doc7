@@ -1,0 +1,29 @@
+﻿<Window x:Class="Doctor.Regist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Doctor"
+        mc:Ignorable="d"
+        Title="Учет записей к врачу" Height="450" Width="800" WindowStartupLocation="CenterScreen" Icon="Image1.png">
+    <Grid>
+        <Button x:Name="BtClose" Content="Выйти" HorizontalAlignment="Left" Height="50" Margin="28,347,0,0" VerticalAlignment="Top" Width="125" Click="BtClose_Click"/>
+        <Button x:Name="BtBack" Content="Назад" HorizontalAlignment="Left" Height="50" Margin="185,347,0,0" VerticalAlignment="Top" Width="125" Click="BtBack_Click"/>
+        <Button x:Name="BtLog" Content="Войти" HorizontalAlignment="Left" Height="50" Margin="636,347,0,0" VerticalAlignment="Top" Width="125" Click="BtLog_Click"/>
+        <Image Margin="0,0,701,320" Source="Image1.png" Stretch="Fill"/>
+        <Label Content="Учет посещаемости к врачу" HorizontalAlignment="Left" Height="55" Margin="175,0,0,0" VerticalAlignment="Top" Width="478" FontSize="36"/>
+        <Label Content="Регистрация" HorizontalAlignment="Left" Height="55" Margin="324,60,0,0" VerticalAlignment="Top" Width="234" FontSize="24"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Height="35" Margin="28,138,0,0" VerticalAlignment="Top" Width="95" FontSize="20"/>
+        <TextBox x:Name="TexBxFamil" HorizontalAlignment="Left" Height="26" Margin="123,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="166" PreviewTextInput="TexBxFamil_PreviewTextInput"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Height="39" Margin="438,187,0,0" VerticalAlignment="Top" Width="82" FontSize="20"/>
+        <Button x:Name="BtReg" Content="Зарегистрироваться" HorizontalAlignment="Left" Height="50" Margin="486,347,0,0" VerticalAlignment="Top" Width="125" Click="BtReg_Click"/>
+        <PasswordBox x:Name="PassBx" HorizontalAlignment="Left" Height="26" Margin="520,196,0,0" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="TexBxName" HorizontalAlignment="Left" Height="26" Margin="123,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="166" PreviewTextInput="TexBxFamil_PreviewTextInput"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" Height="39" Margin="450,138,0,0" VerticalAlignment="Top" Width="70" FontSize="20"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Height="35" Margin="70,187,0,0" VerticalAlignment="Top" Width="53" FontSize="20"/>
+        <Label Content="Отчество:" HorizontalAlignment="Left" Height="35" Margin="24,236,0,0" VerticalAlignment="Top" Width="99" FontSize="20"/>
+        <TextBox x:Name="TexBxOtchestv" HorizontalAlignment="Left" Height="26" Margin="123,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="166" PreviewTextInput="TexBxFamil_PreviewTextInput"/>
+        <TextBox x:Name="TexBxLog" HorizontalAlignment="Left" Height="26" Margin="520,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="166"/>
+
+    </Grid>
+</Window>
